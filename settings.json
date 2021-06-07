@@ -1,0 +1,47 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "python.insidersChannel": "weekly",
+    "python.formatting.provider": "black",
+    "python.analysis.autoImportCompletions": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "JetBrains Mono, monospace",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "window.menuBarVisibility": "compact",
+    "workbench.colorTheme": "Zenburn",
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.quickSuggestions": false,
+    "editor.parameterHints.enabled": false,
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": 1,
+    "editor.semanticHighlighting.enabled": false,
+
+    "breadcrumbs.enabled": false,
+    "editor.folding": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.minimap.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "editor.renderIndentGuides": false,
+    "editor.roundedSelection": false,
+    "editor.selectionHighlight": false,
+    "editor.scrollBeyondLastLine": false,
+    "explorer.decorations.colors": false,
+    "explorer.openEditors.visible": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.showIcons": false,
+    "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "none"
+
+}
