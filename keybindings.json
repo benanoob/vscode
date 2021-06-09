@@ -1,15 +1,7 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "alt+a",
-        "command": "python.execInTerminal"
-	},
-	{
-		"key": "alt+z",
-		"command": "-editor.action.toggleWordWrap"
-	},
-	{
-		"key": "alt+s",
-		"command": "findJump.activate"
-	}
+        "key": "alt+s",
+        "command": "findJump.activate"
+    }
 ]
