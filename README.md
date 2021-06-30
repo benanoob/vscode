@@ -35,7 +35,7 @@ Live Share
     "editor.cursorBlinking": "solid",
     "workbench.colorTheme": "Monochrome Dark",
 
-    "python.venvPath": "C:\\Users\\Eiosis\\venv",
+    "python.venvPath": "C:\\Users\\user_name\\venv",
     "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
     "workbench.editorAssociations": {
