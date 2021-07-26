@@ -8,14 +8,17 @@ vscode config file
 ```
 Github Light Monochrome
 Monochrome dark
+Darcula Theme
 Find-Jump
 Python
+Python Docstring Generator
 C/C++
 Code Spell Checker
 Matlab
 matlab-formatter
 PowerShell
 Live Share
+Format-Files
 ```
 
 # settings
@@ -25,22 +28,29 @@ Live Share
     "telemetry.enableTelemetry": false,
     
     "editor.rulers": [
-        80,
+        79,
         120
     ],
     "editor.fontSize": 17,
-    "terminal.integrated.fontSize": 17,
-    "debug.console.fontSize": 17,
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 16,
+    "debug.console.fontSize": 16,
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
-    "workbench.colorTheme": "Monochrome Dark",
+    "workbench.colorTheme": "GitHub Light Monochrome",
 
-    "python.venvPath": "C:\\Users\\user_name\\venv",
+    "python.venvPath": "C:\\Users\\Eiosis\\venv",
     "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E203"
+    ],
 
     "cSpell.enabled": false,
     "editor.quickSuggestions": false,
@@ -53,20 +63,29 @@ Live Share
     "breadcrumbs.icons": false,
     "editor.colorDecorators": false,
     "editor.find.addExtraSpaceOnTop": false,
-    "editor.links": false,
-    "editor.occurrencesHighlight": false,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "none",
     "editor.roundedSelection": false,
-    "editor.selectionHighlight": false,
     "workbench.editor.showIcons": false,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": null,
     "workbench.tree.indent": 14,
-    "workbench.tree.renderIndentGuides": "none",
     "editor.lineNumbers": "off",
     "workbench.sideBar.location": "right",
     "window.enableMenuBarMnemonics": false,
+    "editor.renderIndentGuides": false,
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "editor.minimap.enabled": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.activityBar.visible": false,
+    
 }
 ```
 
@@ -112,6 +131,20 @@ Live Share
 			"to": "prevBlankLine",
 			"by": "wrappedLine"
 		}
+	},
+	{
+		"key": "ctrl+alt+b",
+		"command": "markdown.extension.editing.toggleBold",
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-markdown.extension.editing.toggleBold",
+		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+	},
+	{
+		"key": "alt+q",
+		"command": "workbench.action.toggleActivityBarVisibility"
 	}
 ]
 ```
