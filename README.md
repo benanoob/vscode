@@ -139,5 +139,15 @@ Format-Files
 		"command": "-markdown.extension.editing.toggleBold",
 		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
 	},
+    {
+		"key": "alt+h",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+i",
+		"command": "-editor.action.showHover",
+		"when": "editorTextFocus"
+	},
 	]
 ```
