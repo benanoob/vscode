@@ -1,7 +1,7 @@
 # vscode
 vscode config file
 
-# windows settings path: 
+# windows settings path:
 `C:\Users\user_name\AppData\Roaming\Code\User`
 
 # extensions used:
@@ -26,18 +26,18 @@ Format-Files
 {
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    
     "editor.rulers": [
         79,
         120
     ],
-    "editor.fontSize": 17,
+    "editor.fontSize": 16,
     "editor.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 16,
     "debug.console.fontSize": 16,
-    "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
-    "workbench.colorTheme": "GitHub Light Monochrome",
+    "editor.cursorStyle": "block",
+    "workbench.colorTheme": "Atom One Dark",
+
 
     "python.venvPath": "C:\\Users\\Eiosis\\venv",
     "python.formatting.provider": "black",
@@ -45,47 +45,48 @@ Format-Files
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.pydocstyleEnabled": true,
-    "python.linting.flake8Args": [
-        "--ignore=E203"
-    ],
-
-    "cSpell.enabled": false,
-    "editor.quickSuggestions": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.parameterHints.enabled": false,
-    "editor.suggestOnTriggerCharacters": false,
-
-    "editor.folding": false,
-    "breadcrumbs.enabled": false,
-    "breadcrumbs.icons": false,
-    "editor.colorDecorators": false,
-    "editor.find.addExtraSpaceOnTop": false,
-    "editor.renderLineHighlight": "all",
-    "editor.renderWhitespace": "none",
-    "editor.roundedSelection": false,
-    "workbench.editor.showIcons": false,
-    "workbench.editor.tabCloseButton": "off",
-    "workbench.iconTheme": null,
-    "workbench.tree.indent": 14,
-    "editor.lineNumbers": "off",
-    "workbench.sideBar.location": "right",
-    "window.enableMenuBarMnemonics": false,
-    "editor.renderIndentGuides": false,
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "editor.minimap.enabled": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E203,W503"
+    ],
+    "python.linting.flake8CategorySeverity.E": "Information",
+
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+
+    "cSpell.enabled": false,
+    // "editor.quickSuggestions": false,
+    // "editor.parameterHints.enabled": false,
+    // "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.activityBar.visible": false,
-    
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.icons": false,
+    "editor.folding": false,
+    "editor.colorDecorators": false,
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.renderLineHighlight": "all",
+    "editor.roundedSelection": false,
+    "editor.lineNumbers": "off",
+    "editor.renderIndentGuides": false,
+    "editor.minimap.enabled": false,
+    "notebook.lineNumbers": "on",
+    "workbench.editor.showIcons": false,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.iconTheme": null,
+    "workbench.tree.indent": 14,
+    "workbench.sideBar.location": "right",
+    "window.enableMenuBarMnemonics": false,
+
+    "files.trimTrailingWhitespace": true,
 }
 ```
 
@@ -93,10 +94,6 @@ Format-Files
 ```
 // Place your key bindings in this file to override the defaultsauto[]
 [
-	{
-		"key": "alt+s",
-		"command": "findJump.activate"
-	},
 	{
 		"key": "f1",
 		"command": "-workbench.action.showCommands"
@@ -113,11 +110,11 @@ Format-Files
 		"key": "alt+f",
 		"command": "search.action.openNewEditor"
 	},
-	
+
 	{
 		"key": "ctrl+down",
 		"command": "cursorMove",
-		"when": "editorTextFocus", 
+		"when": "editorTextFocus",
 		"args": {
 			"to": "nextBlankLine",
 			"by": "wrappedLine"
@@ -126,7 +123,7 @@ Format-Files
 	{
 		"key": "ctrl+up",
 		"command": "cursorMove",
-		"when": "editorTextFocus", 
+		"when": "editorTextFocus",
 		"args": {
 			"to": "prevBlankLine",
 			"by": "wrappedLine"
@@ -142,9 +139,5 @@ Format-Files
 		"command": "-markdown.extension.editing.toggleBold",
 		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
 	},
-	{
-		"key": "alt+q",
-		"command": "workbench.action.toggleActivityBarVisibility"
-	}
-]
+	]
 ```
