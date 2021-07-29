@@ -7,8 +7,7 @@ vscode config file
 # extensions used:
 ```
 Github Light Monochrome
-Monochrome dark
-Darcula Theme
+Atom One Dark Theme
 Find-Jump
 Python
 Python Docstring Generator
@@ -17,6 +16,7 @@ Code Spell Checker
 Matlab
 matlab-formatter
 PowerShell
+LaTeX Workshop
 Live Share
 Format-Files
 ```
