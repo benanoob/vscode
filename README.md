@@ -7,8 +7,7 @@ vscode config file
 # extensions used:
 ```
 Github Light Monochrome
-Atom One Dark Theme
-Find-Jump
+Zenburn
 Python
 Python Docstring Generator
 C/C++
@@ -17,28 +16,35 @@ Matlab
 matlab-formatter
 PowerShell
 LaTeX Workshop
+Markdown All in One
 Live Share
-Format-Files
+GitLens
 ```
 
 # settings
 ```
 {
+  {
+    // telemetry
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    // common
     "editor.rulers": [
         79,
         120
     ],
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontSize": 16,
-    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 15,
+    "debug.console.fontSize": 15,
     "editor.cursorBlinking": "solid",
+    "workbench.colorTheme": "Zenburn",
+    //
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 30000,
+    "files.trimTrailingWhitespace": true,
     "editor.cursorStyle": "block",
-    "workbench.colorTheme": "Atom One Dark",
-
-
+    // python
     "python.venvPath": "C:\\Users\\Eiosis\\venv",
     "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
@@ -49,44 +55,36 @@ Format-Files
         "default": "right",
         "jupyter-notebook": "left"
     },
+    "notebook.lineNumbers": "on",
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "python.linting.pydocstyleEnabled": true,
     "python.linting.flake8Args": [
-        "--ignore=E203,W503"
+        "--ignore=E203,W503,E501"
     ],
     "python.linting.flake8CategorySeverity.E": "Information",
-
+    // markdown
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-
+    // completion and spellcheck
     "cSpell.enabled": false,
     // "editor.quickSuggestions": false,
     // "editor.parameterHints.enabled": false,
     // "editor.suggestOnTriggerCharacters": false,
     "editor.acceptSuggestionOnEnter": "off",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "breadcrumbs.enabled": false,
-    "breadcrumbs.icons": false,
+    // visual settings/random
     "editor.folding": false,
-    "editor.colorDecorators": false,
-    "editor.find.addExtraSpaceOnTop": false,
     "editor.renderLineHighlight": "all",
-    "editor.roundedSelection": false,
-    "editor.lineNumbers": "off",
-    "editor.renderIndentGuides": false,
     "editor.minimap.enabled": false,
-    "notebook.lineNumbers": "on",
-    "workbench.editor.showIcons": false,
     "workbench.editor.tabCloseButton": "off",
-    "workbench.iconTheme": null,
     "workbench.tree.indent": 14,
     "workbench.sideBar.location": "right",
     "window.enableMenuBarMnemonics": false,
-
-    "files.trimTrailingWhitespace": true,
+    // git lens
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+}
 }
 ```
 
