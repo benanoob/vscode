@@ -24,7 +24,6 @@ GitLens
 # settings
 ```
 {
-  {
     // telemetry
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -38,7 +37,8 @@ GitLens
     "terminal.integrated.fontSize": 15,
     "debug.console.fontSize": 15,
     "editor.cursorBlinking": "solid",
-    "workbench.colorTheme": "Zenburn",
+    "workbench.colorTheme": "Sublime Text 4 Theme",
+    "editor.wordWrapColumn": 120,
     //
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 30000,
@@ -68,7 +68,7 @@ GitLens
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     // completion and spellcheck
-    "cSpell.enabled": false,
+    "cSpell.enabled": true,
     // "editor.quickSuggestions": false,
     // "editor.parameterHints.enabled": false,
     // "editor.suggestOnTriggerCharacters": false,
@@ -84,7 +84,173 @@ GitLens
     // git lens
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
-}
+    // latex workshop
+    "[latex]": {
+        "editor.wordWrap":"wordWrapColumn"
+    },
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    // "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.tools": [
+
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-lualatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "latexmk_rconly",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "rnw2tex",
+            "command": "Rscript",
+            "args": [
+                "-e",
+                "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2tex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "jnw2texmintex",
+            "command": "julia",
+            "args": [
+                "-e",
+                "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
+            ],
+            "env": {}
+        },
+        {
+            "name": "tectonic",
+            "command": "tectonic",
+            "args": [
+                "--synctex",
+                "--keep-logs",
+                "%DOC%.tex"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex ➞ biber ➞ pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "biber",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+
+        {
+            "name": "latexmk 🔃",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "latexmk (latexmkrc)",
+            "tools": [
+                "latexmk_rconly"
+            ]
+        },
+        {
+            "name": "latexmk (lualatex)",
+            "tools": [
+                "lualatexmk"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "Compile Rnw files",
+            "tools": [
+                "rnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Compile Jnw files",
+            "tools": [
+                "jnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "tectonic",
+            "tools": [
+                "tectonic"
+            ]
+        }
+    ],
+
 }
 ```
 
@@ -137,7 +303,7 @@ GitLens
 		"command": "-markdown.extension.editing.toggleBold",
 		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
 	},
-    {
+	{
 		"key": "alt+h",
 		"command": "editor.action.showHover",
 		"when": "editorTextFocus"
