@@ -6,8 +6,6 @@ vscode config file
 
 # extensions used:
 ```
-Github Light Monochrome
-Zenburn
 Python
 Python Docstring Generator
 C/C++
@@ -34,16 +32,18 @@ GitLens
     ],
     "editor.fontSize": 15,
     "editor.fontFamily": "JetBrains Mono",
+    "editor.fontWeight": "300",
     "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontWeight": "300",
     "debug.console.fontSize": 15,
     "editor.cursorBlinking": "solid",
-    "workbench.colorTheme": "Sublime Text 4 Theme",
-    "editor.wordWrapColumn": 120,
+    "editor.cursorStyle": "block",
     //
+    "editor.wordWrapColumn": 120,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 30000,
     "files.trimTrailingWhitespace": true,
-    "editor.cursorStyle": "block",
     // python
     "python.venvPath": "C:\\Users\\Eiosis\\venv",
     "python.formatting.provider": "black",
@@ -68,30 +68,39 @@ GitLens
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     // completion and spellcheck
-    "cSpell.enabled": true,
     // "editor.quickSuggestions": false,
     // "editor.parameterHints.enabled": false,
     // "editor.suggestOnTriggerCharacters": false,
     "editor.acceptSuggestionOnEnter": "off",
+    "cSpell.enabled": false,
+    // gitlens
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
     // visual settings/random
     "editor.folding": false,
     "editor.renderLineHighlight": "all",
-    "editor.minimap.enabled": false,
     "workbench.editor.tabCloseButton": "off",
     "workbench.tree.indent": 14,
     "workbench.sideBar.location": "right",
+    "workbench.editor.showIcons": false,
+    "workbench.iconTheme": null,
     "window.enableMenuBarMnemonics": false,
-    // git lens
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.icons": false,
+    "editor.links": false,
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.horizontal": "visible",
+    "editor.scrollbar.vertical": "visible",
+    "editor.selectionHighlight": false,
     // latex workshop
     "[latex]": {
-        "editor.wordWrap":"wordWrapColumn"
+        "editor.wordWrap": "on"
     },
     "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.view.pdf.viewer": "tab",
     // "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.tools": [
-
         {
             "name": "latexmk",
             "command": "latexmk",
@@ -201,7 +210,6 @@ GitLens
                 "pdflatex"
             ]
         },
-
         {
             "name": "latexmk 🔃",
             "tools": [
@@ -250,7 +258,6 @@ GitLens
             ]
         }
     ],
-
 }
 ```
 
