@@ -23,8 +23,7 @@ GitLens
 ```
 {
     // telemetry
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel":"off",
     // common
     "editor.rulers": [
         79,
@@ -32,28 +31,28 @@ GitLens
     ],
     "editor.fontSize": 15,
     "editor.fontFamily": "JetBrains Mono",
-    "editor.fontWeight": "300",
+    "editor.fontWeight": "400",
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontWeight": "300",
+    "terminal.integrated.fontWeight": "400",
     "debug.console.fontSize": 15,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "workbench.colorTheme": "Cute",
     //
     "editor.wordWrapColumn": 120,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 30000,
     "files.trimTrailingWhitespace": true,
     // python
+    "autoDocstring.docstringFormat": "sphinx",
     "python.venvPath": "C:\\Users\\Eiosis\\venv",
     "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
-    },
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
     },
     "notebook.lineNumbers": "on",
     "python.linting.flake8Enabled": true,
@@ -68,9 +67,6 @@ GitLens
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     // completion and spellcheck
-    // "editor.quickSuggestions": false,
-    // "editor.parameterHints.enabled": false,
-    // "editor.suggestOnTriggerCharacters": false,
     "editor.acceptSuggestionOnEnter": "off",
     "cSpell.enabled": false,
     // gitlens
@@ -82,11 +78,9 @@ GitLens
     "editor.renderLineHighlight": "all",
     "workbench.editor.tabCloseButton": "off",
     "workbench.tree.indent": 14,
-    "workbench.sideBar.location": "right",
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
     "window.enableMenuBarMnemonics": false,
-    "breadcrumbs.enabled": false,
     "breadcrumbs.icons": false,
     "editor.links": false,
     "editor.minimap.enabled": false,
@@ -97,7 +91,6 @@ GitLens
     "[latex]": {
         "editor.wordWrap": "on"
     },
-    "latex-workshop.latex.recipe.default": "lastUsed",
     "latex-workshop.view.pdf.viewer": "tab",
     // "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.tools": [
@@ -202,6 +195,12 @@ GitLens
     ],
     "latex-workshop.latex.recipes": [
         {
+            "name": "tectonic",
+            "tools": [
+                "tectonic"
+            ]
+        },
+        {
             "name": "pdflatex ➞ biber ➞ pdflatex × 2",
             "tools": [
                 "pdflatex",
@@ -251,19 +250,12 @@ GitLens
                 "latexmk"
             ]
         },
-        {
-            "name": "tectonic",
-            "tools": [
-                "tectonic"
-            ]
-        }
     ],
 }
 ```
 
 # keybindings
 ```
-// Place your key bindings in this file to override the defaultsauto[]
 [
 	{
 		"key": "f1",
@@ -319,6 +311,6 @@ GitLens
 		"key": "ctrl+k ctrl+i",
 		"command": "-editor.action.showHover",
 		"when": "editorTextFocus"
-	},
-	]
+	}
+]
 ```
