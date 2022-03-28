@@ -8,6 +8,7 @@ vscode config file
 ```
 Python
 Python Docstring Generator
+Language-Cython
 C/C++
 Code Spell Checker
 Matlab
@@ -29,39 +30,41 @@ GitLens
         79,
         120
     ],
-    "editor.fontSize": 15,
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontWeight": "400",
-    "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontWeight": "400",
-    "debug.console.fontSize": 15,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "debug.console.fontSize": 14,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
-    "workbench.colorTheme": "Cute",
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Atom One Dark",
     //
-    "editor.wordWrapColumn": 120,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 30000,
     "files.trimTrailingWhitespace": true,
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.renderWhitespace": "none",
+    "editor.showFoldingControls": "always",
+    "files.exclude": {
+        "**/.git": false
+    },
     // python
-    "autoDocstring.docstringFormat": "sphinx",
+    "python.envFile": "${workspaceFolder}/.env",
+    "autoDocstring.docstringFormat": "sphinx-notypes",
     "python.venvPath": "C:\\Users\\Eiosis\\venv",
     "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
+    "python.linting.mypyEnabled": true,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
     "notebook.lineNumbers": "on",
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
+    "python.linting.pylintEnabled": true,
     "python.linting.pydocstyleEnabled": true,
     "python.linting.flake8Args": [
         "--ignore=E203,W503,E501"
     ],
-    "python.linting.flake8CategorySeverity.E": "Information",
     // markdown
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
@@ -70,9 +73,9 @@ GitLens
     "editor.acceptSuggestionOnEnter": "off",
     "cSpell.enabled": false,
     // gitlens
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
+    // "gitlens.codeLens.enabled": false,
+    // "gitlens.currentLine.enabled": false,
+    // "gitlens.hovers.currentLine.over": "line",
     // visual settings/random
     "editor.folding": false,
     "editor.renderLineHighlight": "all",
@@ -81,12 +84,10 @@ GitLens
     "workbench.editor.showIcons": false,
     "workbench.iconTheme": null,
     "window.enableMenuBarMnemonics": false,
-    "breadcrumbs.icons": false,
-    "editor.links": false,
-    "editor.minimap.enabled": false,
+    // "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "visible",
     "editor.scrollbar.vertical": "visible",
-    "editor.selectionHighlight": false,
+    // "editor.selectionHighlight": false,
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -251,6 +252,7 @@ GitLens
             ]
         },
     ],
+    "jupyter.interactiveWindowMode": "perFile",
 }
 ```
 
