@@ -18,6 +18,9 @@ LaTeX Workshop
 Markdown All in One
 Live Share
 GitLens
+background
+Night Owl
+Cute Pink Light Theme
 ```
 
 # settings
@@ -30,29 +33,25 @@ GitLens
         79,
         120
     ],
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 14,
-    "debug.console.fontSize": 14,
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "debug.console.fontSize": 15,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
-    "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Atom One Dark",
     //
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 30000,
     "files.trimTrailingWhitespace": true,
     "editor.find.addExtraSpaceOnTop": false,
-    "editor.renderWhitespace": "none",
-    "editor.showFoldingControls": "always",
     "files.exclude": {
         "**/.git": false
     },
     // python
     "python.envFile": "${workspaceFolder}/.env",
     "autoDocstring.docstringFormat": "sphinx-notypes",
-    "python.venvPath": "C:\\Users\\Eiosis\\venv",
+    "python.venvPath": "~/venv",
     "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
     "python.linting.mypyEnabled": true,
@@ -65,6 +64,7 @@ GitLens
     "python.linting.flake8Args": [
         "--ignore=E203,W503,E501"
     ],
+    "jupyter.interactiveWindowMode": "perFile",
     // markdown
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
@@ -77,17 +77,11 @@ GitLens
     // "gitlens.currentLine.enabled": false,
     // "gitlens.hovers.currentLine.over": "line",
     // visual settings/random
-    "editor.folding": false,
-    "editor.renderLineHighlight": "all",
     "workbench.editor.tabCloseButton": "off",
-    "workbench.tree.indent": 14,
     "workbench.editor.showIcons": false,
-    "workbench.iconTheme": null,
-    "window.enableMenuBarMnemonics": false,
     // "editor.minimap.enabled": false,
     "editor.scrollbar.horizontal": "visible",
     "editor.scrollbar.vertical": "visible",
-    // "editor.selectionHighlight": false,
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -252,7 +246,8 @@ GitLens
             ]
         },
     ],
-    "jupyter.interactiveWindowMode": "perFile",
+    "workbench.colorTheme": "Night Owl Light",
+    "workbench.sideBar.location": "right",
 }
 ```
 
