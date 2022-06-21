@@ -13,38 +13,40 @@ C/C++
 Code Spell Checker
 Matlab
 matlab-formatter
-PowerShell
 LaTeX Workshop
 Markdown All in One
 Live Share
 GitLens
+Git Graph
 background
-Night Owl
-Cute Pink Light Theme
+Alabaster Dark Theme
 ```
 
 # settings
 ```
 {
     // telemetry
-    "telemetry.telemetryLevel":"off",
+    "telemetry.telemetryLevel": "off",
     // common
     "editor.rulers": [
         79,
         120
     ],
-    "editor.fontSize": 15,
-    "terminal.integrated.fontSize": 15,
-    "debug.console.fontSize": 15,
+    "editor.fontFamily": "Fira Code",
+    "workbench.colorTheme": "Alabaster Dark",
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 13,
+    "debug.console.fontSize": 13,
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
-    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.enabled": false,
     "editor.guides.bracketPairs": true,
-    //
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 30000,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.showIcons": false,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    // files
     "files.trimTrailingWhitespace": true,
-    "editor.find.addExtraSpaceOnTop": false,
     "files.exclude": {
         "**/.git": false
     },
@@ -54,13 +56,10 @@ Cute Pink Light Theme
     "python.venvPath": "~/venv",
     "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
-    "python.linting.mypyEnabled": true,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
     "notebook.lineNumbers": "on",
-    "python.linting.pylintEnabled": true,
-    "python.linting.pydocstyleEnabled": true,
     "python.linting.flake8Args": [
         "--ignore=E203,W503,E501"
     ],
@@ -76,12 +75,6 @@ Cute Pink Light Theme
     // "gitlens.codeLens.enabled": false,
     // "gitlens.currentLine.enabled": false,
     // "gitlens.hovers.currentLine.over": "line",
-    // visual settings/random
-    "workbench.editor.tabCloseButton": "off",
-    "workbench.editor.showIcons": false,
-    // "editor.minimap.enabled": false,
-    "editor.scrollbar.horizontal": "visible",
-    "editor.scrollbar.vertical": "visible",
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -246,8 +239,6 @@ Cute Pink Light Theme
             ]
         },
     ],
-    "workbench.colorTheme": "Night Owl Light",
-    "workbench.sideBar.location": "right",
 }
 ```
 
