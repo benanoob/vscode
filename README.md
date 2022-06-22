@@ -20,6 +20,7 @@ GitLens
 Git Graph
 background
 Alabaster Dark Theme
+Darcula
 ```
 
 # settings
@@ -33,7 +34,7 @@ Alabaster Dark Theme
         120
     ],
     "editor.fontFamily": "Fira Code",
-    "workbench.colorTheme": "Alabaster Dark",
+    "workbench.colorTheme": "Darcula",
     "editor.fontSize": 12,
     "terminal.integrated.fontSize": 13,
     "debug.console.fontSize": 13,
@@ -45,6 +46,11 @@ Alabaster Dark Theme
     "workbench.editor.showIcons": false,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "workbench.iconTheme": null,
+    "workbench.activityBar.visible": false,
+    "zenMode.fullScreen": false,
+    "workbench.editor.showTabs": false,
     // files
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
@@ -75,6 +81,8 @@ Alabaster Dark Theme
     // "gitlens.codeLens.enabled": false,
     // "gitlens.currentLine.enabled": false,
     // "gitlens.hovers.currentLine.over": "line",
+    // windows
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -239,6 +247,7 @@ Alabaster Dark Theme
             ]
         },
     ],
+
 }
 ```
 
