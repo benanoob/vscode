@@ -49,7 +49,6 @@ Darcula
     "editor.occurrencesHighlight": false,
     "workbench.iconTheme": null,
     "workbench.activityBar.visible": false,
-    "zenMode.fullScreen": false,
     "workbench.editor.showTabs": false,
     // files
     "files.trimTrailingWhitespace": true,
