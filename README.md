@@ -33,23 +33,19 @@ Darcula
         79,
         120
     ],
-    "editor.fontFamily": "Fira Code",
+    //"editor.fontFamily": "Fira Code",
     "workbench.colorTheme": "Darcula",
-    "editor.fontSize": 12,
-    "terminal.integrated.fontSize": 13,
-    "debug.console.fontSize": 13,
+    // "editor.fontSize": 12,
+    // "terminal.integrated.fontSize": 13,
+    // "debug.console.fontSize": 13,
     "editor.cursorBlinking": "solid",
-    "editor.cursorStyle": "block",
     "editor.bracketPairColorization.enabled": false,
     "editor.guides.bracketPairs": true,
-    "workbench.editor.tabCloseButton": "off",
     "workbench.editor.showIcons": false,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
     "editor.occurrencesHighlight": false,
     "workbench.iconTheme": null,
-    "workbench.activityBar.visible": false,
-    "workbench.editor.showTabs": false,
     // files
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
@@ -254,14 +250,6 @@ Darcula
 ```
 [
 	{
-		"key": "f1",
-		"command": "-workbench.action.showCommands"
-	},
-	{
-		"key": "f1",
-		"command": "workbench.action.quickOpenTerm"
-	},
-	{
 		"key": "alt+m",
 		"command": "workbench.action.toggleMaximizedPanel"
 	},
@@ -287,16 +275,6 @@ Darcula
 			"to": "prevBlankLine",
 			"by": "wrappedLine"
 		}
-	},
-	{
-		"key": "ctrl+alt+b",
-		"command": "markdown.extension.editing.toggleBold",
-		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-	},
-	{
-		"key": "ctrl+b",
-		"command": "-markdown.extension.editing.toggleBold",
-		"when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
 	},
 	{
 		"key": "alt+h",
