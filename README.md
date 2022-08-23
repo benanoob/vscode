@@ -33,26 +33,33 @@ Darcula
         79,
         120
     ],
-    //"editor.fontFamily": "Fira Code",
-    "workbench.colorTheme": "Darcula",
-    // "editor.fontSize": 12,
-    // "terminal.integrated.fontSize": 13,
-    // "debug.console.fontSize": 13,
+    "editor.fontFamily": "Jetbrains Mono",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
+    "debug.console.fontSize": 13,
+    "workbench.colorTheme": "Dracula",
     "editor.cursorBlinking": "solid",
     "editor.bracketPairColorization.enabled": false,
-    "editor.guides.bracketPairs": true,
     "workbench.editor.showIcons": false,
+    "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
-    "editor.occurrencesHighlight": false,
     "workbench.iconTheme": null,
+    "zenMode.fullScreen": false,
     // files
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
         "**/.git": false
     },
-    // python
-    "python.envFile": "${workspaceFolder}/.env",
+    // completion and spellcheck
+    "editor.acceptSuggestionOnEnter": "off",
+    "cSpell.enabled": false,
+    // windows
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "."
+    },
+    //
     "autoDocstring.docstringFormat": "sphinx-notypes",
     "python.venvPath": "~/venv",
     "python.formatting.provider": "black",
@@ -69,15 +76,6 @@ Darcula
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    // completion and spellcheck
-    "editor.acceptSuggestionOnEnter": "off",
-    "cSpell.enabled": false,
-    // gitlens
-    // "gitlens.codeLens.enabled": false,
-    // "gitlens.currentLine.enabled": false,
-    // "gitlens.hovers.currentLine.over": "line",
-    // windows
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -242,7 +240,9 @@ Darcula
             ]
         },
     ],
-
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
 }
 ```
 
@@ -257,7 +257,6 @@ Darcula
 		"key": "alt+f",
 		"command": "search.action.openNewEditor"
 	},
-
 	{
 		"key": "ctrl+down",
 		"command": "cursorMove",
@@ -285,6 +284,6 @@ Darcula
 		"key": "ctrl+k ctrl+i",
 		"command": "-editor.action.showHover",
 		"when": "editorTextFocus"
-	}
+	},
 ]
 ```
