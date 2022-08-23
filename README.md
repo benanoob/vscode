@@ -18,9 +18,11 @@ Markdown All in One
 Live Share
 GitLens
 Git Graph
+Diff
 background
+Activitus Bar
 Alabaster Dark Theme
-Darcula
+Dracula
 ```
 
 # settings
