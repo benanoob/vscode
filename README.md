@@ -39,15 +39,14 @@ Dracula
     "editor.fontSize": 13,
     "terminal.integrated.fontSize": 13,
     "debug.console.fontSize": 13,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Pale Fire",
+    "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
-    "editor.bracketPairColorization.enabled": false,
     "workbench.editor.showIcons": false,
     "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
     "workbench.iconTheme": null,
-    "zenMode.fullScreen": false,
     // files
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
@@ -242,6 +241,7 @@ Dracula
             ]
         },
     ],
+    //julia
     "terminal.integrated.commandsToSkipShell": [
         "language-julia.interrupt"
     ],
