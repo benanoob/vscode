@@ -14,14 +14,10 @@ Code Spell Checker
 Matlab
 matlab-formatter
 LaTeX Workshop
-Markdown All in One
 Live Share
 GitLens
 Git Graph
 Diff
-background
-Activitus Bar
-Alabaster Dark Theme
 Dracula
 ```
 
@@ -42,11 +38,6 @@ Dracula
     "workbench.colorTheme": "Pale Fire",
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
-    "workbench.editor.showIcons": false,
-    "workbench.activityBar.visible": false,
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false,
-    "workbench.iconTheme": null,
     // files
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
@@ -240,10 +231,6 @@ Dracula
                 "latexmk"
             ]
         },
-    ],
-    //julia
-    "terminal.integrated.commandsToSkipShell": [
-        "language-julia.interrupt"
     ],
 }
 ```
