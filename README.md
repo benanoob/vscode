@@ -12,18 +12,26 @@ Language-Cython
 C/C++
 Code Spell Checker
 Matlab
-matlab-formatter
 LaTeX Workshop
+<<<<<<< HEAD
 Live Share
 GitLens
 Git Graph
 Diff
 Dracula
+=======
+Markdown All in One
+GitLens
+Git Graph
+Diff
+Zenburn optimized
+>>>>>>> b9fb8e7 (update config)
 ```
 
 # settings
 ```
 {
+ {
     // telemetry
     "telemetry.telemetryLevel": "off",
     // common
@@ -31,13 +39,6 @@ Dracula
         79,
         120
     ],
-    "editor.fontFamily": "Jetbrains Mono",
-    "editor.fontSize": 13,
-    "terminal.integrated.fontSize": 13,
-    "debug.console.fontSize": 13,
-    "workbench.colorTheme": "Pale Fire",
-    "editor.cursorStyle": "block",
-    "editor.cursorBlinking": "solid",
     // files
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
@@ -45,7 +46,6 @@ Dracula
     },
     // completion and spellcheck
     "editor.acceptSuggestionOnEnter": "off",
-    "cSpell.enabled": false,
     // windows
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.env.windows": {
@@ -54,20 +54,15 @@ Dracula
     //
     "autoDocstring.docstringFormat": "sphinx-notypes",
     "python.venvPath": "~/venv",
-    "python.formatting.provider": "black",
     "python.analysis.autoImportCompletions": false,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter-notebook",
+        "*.pdf": "latex-workshop-pdf-hook"
     },
     "notebook.lineNumbers": "on",
     "python.linting.flake8Args": [
         "--ignore=E203,W503,E501"
     ],
-    "jupyter.interactiveWindowMode": "perFile",
-    // markdown
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -75,6 +70,7 @@ Dracula
     "latex-workshop.view.pdf.viewer": "tab",
     // "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.tools": [
+
         {
             "name": "latexmk",
             "command": "latexmk",
@@ -102,14 +98,6 @@ Dracula
             "env": {}
         },
         {
-            "name": "latexmk_rconly",
-            "command": "latexmk",
-            "args": [
-                "%DOC%"
-            ],
-            "env": {}
-        },
-        {
             "name": "pdflatex",
             "command": "pdflatex",
             "args": [
@@ -121,14 +109,6 @@ Dracula
             "env": {}
         },
         {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
-            ],
-            "env": {}
-        },
-        {
             "name": "biber",
             "command": "biber",
             "args": [
@@ -136,51 +116,8 @@ Dracula
             ],
             "env": {}
         },
-        {
-            "name": "rnw2tex",
-            "command": "Rscript",
-            "args": [
-                "-e",
-                "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"
-            ],
-            "env": {}
-        },
-        {
-            "name": "jnw2tex",
-            "command": "julia",
-            "args": [
-                "-e",
-                "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"
-            ],
-            "env": {}
-        },
-        {
-            "name": "jnw2texmintex",
-            "command": "julia",
-            "args": [
-                "-e",
-                "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"
-            ],
-            "env": {}
-        },
-        {
-            "name": "tectonic",
-            "command": "tectonic",
-            "args": [
-                "--synctex",
-                "--keep-logs",
-                "%DOC%.tex"
-            ],
-            "env": {}
-        }
     ],
     "latex-workshop.latex.recipes": [
-        {
-            "name": "tectonic",
-            "tools": [
-                "tectonic"
-            ]
-        },
         {
             "name": "pdflatex ➞ biber ➞ pdflatex × 2",
             "tools": [
@@ -190,48 +127,20 @@ Dracula
                 "pdflatex"
             ]
         },
-        {
-            "name": "latexmk 🔃",
-            "tools": [
-                "latexmk"
-            ]
-        },
-        {
-            "name": "latexmk (latexmkrc)",
-            "tools": [
-                "latexmk_rconly"
-            ]
-        },
-        {
-            "name": "latexmk (lualatex)",
-            "tools": [
-                "lualatexmk"
-            ]
-        },
-        {
-            "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
-            "tools": [
-                "pdflatex",
-                "bibtex",
-                "pdflatex",
-                "pdflatex"
-            ]
-        },
-        {
-            "name": "Compile Rnw files",
-            "tools": [
-                "rnw2tex",
-                "latexmk"
-            ]
-        },
-        {
-            "name": "Compile Jnw files",
-            "tools": [
-                "jnw2tex",
-                "latexmk"
-            ]
-        },
     ],
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
+    "workbench.colorTheme": "Zenburn",
+    // "window.autoDetectColorScheme": true,
+    // "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    // "workbench.preferredLightColorTheme": "Catppuccin Latte",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "editor.fontSize": 15,
+    "editor.fontFamily": "Iosevka Comfy",
+}
 }
 ```
 
