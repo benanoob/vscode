@@ -31,7 +31,6 @@ Zenburn optimized
 # settings
 ```
 {
- {
     // telemetry
     "telemetry.telemetryLevel": "off",
     // common
@@ -133,14 +132,8 @@ Zenburn optimized
     "editor.minimap.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "workbench.colorTheme": "Zenburn",
-    // "window.autoDetectColorScheme": true,
-    // "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-    // "workbench.preferredLightColorTheme": "Catppuccin Latte",
-    "workbench.iconTheme": "catppuccin-macchiato",
+    "editor.fontFamily": "Jetbrains Mono",
     "editor.fontSize": 15,
-    "editor.fontFamily": "Iosevka Comfy",
-}
 }
 ```
 
