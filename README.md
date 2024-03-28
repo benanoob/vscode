@@ -8,24 +8,17 @@ vscode config file
 ```
 Python
 Python Docstring Generator
+Pylint
 Language-Cython
 C/C++
 Code Spell Checker
 Matlab
 LaTeX Workshop
-<<<<<<< HEAD
-Live Share
-GitLens
-Git Graph
-Diff
-Dracula
-=======
 Markdown All in One
 GitLens
 Git Graph
 Diff
-Zenburn optimized
->>>>>>> b9fb8e7 (update config)
+Snazzy light
 ```
 
 # settings
@@ -59,9 +52,6 @@ Zenburn optimized
         "*.pdf": "latex-workshop-pdf-hook"
     },
     "notebook.lineNumbers": "on",
-    "python.linting.flake8Args": [
-        "--ignore=E203,W503,E501"
-    ],
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -127,13 +117,20 @@ Zenburn optimized
             ]
         },
     ],
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "git.openRepositoryInParentFolders": "never",
     "editor.minimap.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "editor.fontFamily": "Jetbrains Mono",
+    "editor.fontFamily": "Iosevka comfy",
     "editor.fontSize": 15,
+    "workbench.activityBar.location": "top",
+    "workbench.iconTheme": null,
+    "editor.folding": false,
+    "workbench.editor.showIcons": false,
+    "breadcrumbs.enabled": false,
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Snazzy Light",
+    "workbench.preferredLightColorTheme": "Snazzy Light",
 }
 ```
 
