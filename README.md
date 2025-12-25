@@ -18,7 +18,10 @@ Markdown All in One
 GitLens
 Git Graph
 Diff
-Snazzy light
+ayu
+dracula
+discord rpc
+pico8-ls
 ```
 
 # settings
@@ -28,7 +31,6 @@ Snazzy light
     "telemetry.telemetryLevel": "off",
     // common
     "editor.rulers": [
-        79,
         120
     ],
     // files
@@ -121,16 +123,19 @@ Snazzy light
     "editor.minimap.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "editor.fontFamily": "Iosevka comfy",
-    "editor.fontSize": 15,
-    "workbench.activityBar.location": "top",
-    "workbench.iconTheme": null,
+    "editor.fontFamily": "aporetic sans",
+    "editor.fontSize": 16,
     "editor.folding": false,
-    "workbench.editor.showIcons": false,
-    "breadcrumbs.enabled": false,
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Snazzy Light",
-    "workbench.preferredLightColorTheme": "Snazzy Light",
+    "workbench.preferredLightColorTheme": "Ayu Light Bordered",
+    "workbench.preferredDarkColorTheme": "Dracula Theme",
+    "terminal.integrated.fontSize": 15,
+    "chat.disableAIFeatures": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "windowed",
+    "terminal.integrated.fontFamily": "jetbrains mono",
+    "workbench.settings.showAISearchToggle": false,
 }
 ```
 
@@ -163,15 +168,9 @@ Snazzy light
 			"by": "wrappedLine"
 		}
 	},
-	{
-		"key": "alt+h",
-		"command": "editor.action.showHover",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "ctrl+k ctrl+i",
-		"command": "-editor.action.showHover",
-		"when": "editorTextFocus"
-	},
+        {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    }
 ]
 ```
