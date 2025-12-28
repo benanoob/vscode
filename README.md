@@ -27,7 +27,7 @@ pico8-ls
 # settings
 ```
 {
-    // telemetry
+ // telemetry
     "telemetry.telemetryLevel": "off",
     // common
     "editor.rulers": [
@@ -123,8 +123,8 @@ pico8-ls
     "editor.minimap.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
-    "editor.fontFamily": "aporetic sans",
-    "editor.fontSize": 16,
+    "editor.fontFamily": "aporetic sans mono",
+    "editor.fontSize": 18,
     "editor.folding": false,
     "window.autoDetectColorScheme": true,
     "workbench.preferredLightColorTheme": "Ayu Light Bordered",
@@ -136,6 +136,7 @@ pico8-ls
     "window.customTitleBarVisibility": "windowed",
     "terminal.integrated.fontFamily": "jetbrains mono",
     "workbench.settings.showAISearchToggle": false,
+    "editor.occurrencesHighlight": "off",
 }
 ```
 
