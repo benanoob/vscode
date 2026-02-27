@@ -7,32 +7,32 @@ vscode config file
 # extensions used:
 ```
 Python
+ruff
+ty
 Python Docstring Generator
-Pylint
 Language-Cython
 C/C++
 Code Spell Checker
 Matlab
 LaTeX Workshop
-Markdown All in One
-GitLens
 Git Graph
 Diff
-ayu
-dracula
-discord rpc
 pico8-ls
+Kivy
+
+GitLens
+Pylint
 ```
 
 # settings
-```
+```json
 {
- // telemetry
-    "telemetry.telemetryLevel": "off",
-    // common
-    "editor.rulers": [
-        120
-    ],
+    // visual
+    "editor.fontFamily": "aporetic sans mono", // "jetbrains mono" is dope too
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 16,
+    "window.autoDetectColorScheme": true,
+    "workbench.activityBar.location": "top", // gain space, open sidebar with keyboard
     // files
     "files.trimTrailingWhitespace": true,
     "files.exclude": {
@@ -45,15 +45,33 @@ pico8-ls
     "terminal.integrated.env.windows": {
         "PYTHONPATH": "."
     },
-    //
+    // I had weird bugs with terminal recalls soo turn it off
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.enablePersistentSessions": false,
+    // python
+    "ty.inlayHints.variableTypes": false,
+    "ty.inlayHints.callArgumentNames": false,
+    "pylint.args": [
+        "--rcfile=~/shannon/pylintrc"
+    ],
     "autoDocstring.docstringFormat": "sphinx-notypes",
-    "python.venvPath": "~/venv",
+    "python.venvPath": ".venv",
     "python.analysis.autoImportCompletions": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
         "*.pdf": "latex-workshop-pdf-hook"
     },
     "notebook.lineNumbers": "on",
+    // disable annoying stuff
+    "chat.disableAIFeatures": true,
+    "telemetry.telemetryLevel": "off",
+    "editor.folding": false,
+    "editor.minimap.enabled": false,
+    "update.showReleaseNotes": false,
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "editor.occurrencesHighlight": "off",
+    "MATLAB.showFeatureNotAvailableError": false,
     // latex workshop
     "[latex]": {
         "editor.wordWrap": "on"
@@ -61,7 +79,6 @@ pico8-ls
     "latex-workshop.view.pdf.viewer": "tab",
     // "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.latex.tools": [
-
         {
             "name": "latexmk",
             "command": "latexmk",
@@ -119,38 +136,12 @@ pico8-ls
             ]
         },
     ],
-    "git.openRepositoryInParentFolders": "never",
-    "editor.minimap.enabled": false,
-    "terminal.integrated.persistentSessionReviveProcess": "never",
-    "terminal.integrated.enablePersistentSessions": false,
-    "editor.fontFamily": "aporetic sans mono",
-    "editor.fontSize": 18,
-    "editor.folding": false,
-    "window.autoDetectColorScheme": true,
-    "workbench.preferredLightColorTheme": "Ayu Light Bordered",
-    "workbench.preferredDarkColorTheme": "Dracula Theme",
-    "terminal.integrated.fontSize": 15,
-    "chat.disableAIFeatures": true,
-    "workbench.editor.enablePreview": false,
-    "workbench.activityBar.location": "top",
-    "window.customTitleBarVisibility": "windowed",
-    "terminal.integrated.fontFamily": "jetbrains mono",
-    "workbench.settings.showAISearchToggle": false,
-    "editor.occurrencesHighlight": "off",
 }
 ```
 
 # keybindings
-```
+```json
 [
-	{
-		"key": "alt+m",
-		"command": "workbench.action.toggleMaximizedPanel"
-	},
-	{
-		"key": "alt+f",
-		"command": "search.action.openNewEditor"
-	},
 	{
 		"key": "ctrl+down",
 		"command": "cursorMove",
@@ -169,9 +160,23 @@ pico8-ls
 			"by": "wrappedLine"
 		}
 	},
-        {
-        "key": "alt+z",
-        "command": "-editor.action.toggleWordWrap"
-    }
+	{
+		"key": "f1",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "f3",
+		"command": "workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{
+		"key": "ctrl+oem_3",
+		"command": "-workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	}
 ]
 ```
